@@ -1,7 +1,7 @@
 {%set name = "libmagic" %}
-{%set version = "5.30" %}
+{%set version = "5.32" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "694c2432e5240187524c9e7cf1ec6acc77b47a0e19554d34c14773e43dbbf214" %}
+{%set hash_val = "0eb1a3a65c66da7c4641719c77b7021b252944a37ea0d0bc27aabe227dc477c5" %}
 
 package:
   name: libmagic
