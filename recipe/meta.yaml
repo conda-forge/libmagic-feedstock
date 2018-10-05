@@ -1,6 +1,5 @@
-{%set name = "libmagic" %}
+{% set name = "libmagic" %}
 {% set version = "5.33" %}
-{%set hash_type = "sha256" %}
 {% set hash_val = "1c52c8c3d271cd898d5511c36a68059cda94036111ab293f01f83c3525b737c6" %}
 
 package:
@@ -10,10 +9,10 @@ package:
 source:
   fn: file-{{ version }}.tar.gz
   url: ftp://ftp.astron.com/pub/file/file-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1000
   skip: True  # [win]
 
 requirements:
@@ -22,7 +21,7 @@ requirements:
     - autoconf
     - m4
     - libtool
-    - toolchain
+    - {{ compiler('c') }}
 
 test:
   commands:
