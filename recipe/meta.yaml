@@ -12,7 +12,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
   run_exports:
     - {{ pin_subpackage('libmagic', max_pin='x') }}
