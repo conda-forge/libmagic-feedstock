@@ -23,6 +23,7 @@ requirements:
     - autoconf
     - m4
     - libtool
+    - make
     - {{ compiler('c') }}
 
 test:
